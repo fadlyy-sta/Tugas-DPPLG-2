@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Anggota Perpustakaan</title>
+  <style>
+    body {
+      background: url(maxresdefault.jpg)no-repeat fixed ;
+      background-size: cover;
+    }
+  .container{
+    background-color: grey;
+    border: dashed 4px;
+    border-color: white;
+    border-radius: 20px;
+    padding:20px 40px;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 8vh
+    }
+
+    .input{
+      margin: 13px;
+      
+    }
+
+    .input h2 {
+      text-align: center;
+      border-bottom:2px dashed;
+      border-color: white;
+    }
+
+    .input label{
+      color: white;
+    }
+
+    .btn {
+      display: block ;
+      text-align: center;
+      padding: 10px
+      
+      
+    }
+
+    .btn button {
+      width: 100px;
+      height: 25px;
+    }
+
+    
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="input">
+    <h2>Form Anggota Perpustakaan</h2>
+    <form>
+      <div class="input">
+      <label for="nama">Nama:</label><br> 
+      <input type="text" placeholder="Nama Lengkap Anda.."style="width: 750px;"> 
+      </div>
+
+     
+        <div class="input">
+        <label for="Kota">Kota Lahir:</label><br>
+        <input type="text" list="kota-lahir" placeholder="Kota Lahir Anda.."style="width: 750px;">
+        <datalist id="kota-lahir">
+          <option value="Semarang">Semarang</option>
+          <option value="Jakarta">Jakarta</option>
+          <option value="Jogja">Jogja</option>
+          <option value="Salatiga">Salatiga</option>
+          <option value="Solo">Solo</option>
+        </datalist>
+      </div>
+     
+
+      <div class="input">
+        <label for="tgl">Tempat Tanggal Lahir:</label><br>
+        <input type="date"style="width: 750px;">
+      </div>
+
+      
+        <div class="input">
+        <label>Gender:</label><br>
+        <input type="radio" name="kelamin" id="pria">Pria
+        <input type="radio" name="kelamin" id="wanita">Wanita
+      </div>
+    
+    
+    <div class="input">
+      <label for="tlp">No Telpon:</label><br>
+      <input type="number" placeholder="Nomor Telpon Anda"style="width: 750px;">
+    </div>
+
+    <div class="input">
+      <label for="buku_fav">Buku Favorit:</label><br>
+      <input type="checkbox" name="buku_fav" value="Stoik">Stoikisme
+      <input type="checkbox" name="buku_fav" value="hukum">Buku Hukum
+    </div>
+
+    
+    <label for="agama">Agama</label><br />
+    <select id="agama" name="agama"style="width: 750px;">
+      <option value="Islam">Islam</option>
+      <option value="Kristen">Kristen</option>
+      <option value="Katholik">Katholik</option>
+      <option value="Hindu">Hindu</option>
+      <option value="Buddha">Buddha</option>
+      <option value="Konghucu">Konghucu</option>
+    </select>
+    
+    
+    <div class="input">
+      <label for="alamat">Alamat:</label><br>
+      <textarea placeholder="Alamat rumah Anda"style="width: 750px;" ></textarea>
+    </div>
+    
+    <div class="btn">
+      <button type="submit">Clear</button>
+      <button type="submit">Send</button>
+    </div>
+  </div>
+  </form>
+</body>
+</html>
